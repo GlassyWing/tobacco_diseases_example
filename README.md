@@ -41,11 +41,11 @@ pip install tobacco_diseases-0.1.tar.gz
 
     if __name__ == '__main__':
         predictor = Predictor.create(
-            diseases_model_weights="../model/weights_diseases_382_0.08.pt",
-            weather_model_weights="../model/weights_weather_09_0.005.pt")
+            diseases_model_weights="../model/weights_diseases_742_0.05.pt",
+            weather_model_weights="../model/weights_weather_139_0.005.pt")
     ```
 
-2. 使用已有的气象数据进行预测：
+2. 使用已有的气象数据`../data/diseases_data/forecast_test.csv`进行预测：
 
     ```python
         results = predictor.forecast("../data/diseases_data/forecast_test.csv",
